@@ -1,0 +1,34 @@
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            
+<h2>
+    Titulo: {{tarea.titulo}}
+    <button class="btn btn-dark btn-lg float-right" [routerLink]="['/task-list']">
+                Volver a tareas</button>
+</h2>
+<hr>
+<h5>
+    ID Obtenido por Firebase:{{ tarea.id }}
+</h5>
+<h5>
+    Titulo: {{tarea.titulo}}
+</h5>
+<h5 *ngIf="tarea.descripcion">
+    Descripcion:<br>
+    {{ tarea.descripcion }}
+</h5>
+<h5>
+    Nivel de Urgencia:
+    {{ tarea.urgencia }}
+</h5>
+
+<h5>
+    Responsable:
+    {{ tarea.responsable }}
+</h5>
+
+
+</div>
+</div>
+</div>

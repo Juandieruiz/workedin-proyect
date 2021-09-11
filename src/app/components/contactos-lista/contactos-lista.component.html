@@ -1,0 +1,17 @@
+<!-- Lista de contactos -->
+
+<ul class="contactos">
+    <div *ngFor="let contacto of contactos;let i = index">
+        <hr>
+        <div class="task-box-contacts">
+            <div class="task-field-contacts">
+            <i class="contacto" [routerLink]="['/contact-detail',i]" [queryParams]="contacto">
+                <img mat-card-avatar src="{{contacto.avatar}}" alt="avatar">
+                <div> {{contacto.first_name}} {{contacto.last_name}} </div>
+            </i>
+        </div>
+        <!-- <i (click)="eliminarTarea(tarea.id)" class="fas fa-trash-alt fa-lg text-danger"></i> -->
+        <div class="task-buttons-contacts">
+            <i class="fas fa-edit fa-lg text-info mr-2" [routerLink]="['/editContacto/', contacto.id]"></i>
+        </div>
+    </div>

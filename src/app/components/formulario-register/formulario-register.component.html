@@ -1,0 +1,35 @@
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+<mat-card>
+    <mat-card-content>
+        <div class="header">
+            <h2>Registrarse</h2>
+        </div>
+        <form [formGroup]="formularioRegister" (submit)="enviar()">
+            <div class="email-input">
+                <mat-label>Correo Electrónico:</mat-label><br>
+                <mat-form-field class="full-width" appearance="outline">
+                    <input formControlName="email" matInput required />
+                    <mat-error *ngIf="formularioRegister">
+                        Campo de Email obligatorio
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div>
+                <mat-label>Contraseña:</mat-label><br>
+                <mat-form-field class="full-width" appearance="outline">
+                    <input formControlName="password" matInput type="password" />
+                    <mat-error *ngIf="formularioRegister">
+                        Contraseña obligatoria
+                    </mat-error>
+                </mat-form-field>
+            </div>
+
+            <button>Registrar Usuario</button>
+            <button [routerLink]="['/login']">Ir a Inicio de Sesión</button>
+
+
+        </form>
+    </mat-card-content>
+</mat-card></div></div></div>

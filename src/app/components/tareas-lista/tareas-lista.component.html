@@ -1,0 +1,57 @@
+<!--TODO: ANGULAR MATERIAL LISTA -->
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h1>
+                Listado de Tareas
+            </h1>
+           
+            
+            <button class="btn btn-dark btn-lg float-right" routerLink="/home">
+                HOME
+            </button>
+            <h3> Tus tareas:</h3>
+            <button class="btn btn-dark btn-lg float-center" routerLink="/create-task">
+                Agregar Nueva Tarea
+            </button>
+            <h5 style="margin-top: 30px;" *ngIf="tareas.length == 0">No hay datos para mostrar</h5>
+
+            <div *ngFor="let tarea of tareas;let i = index">
+                <i class="tarea" [routerLink]="['/detail',i]" [queryParams]="tarea">
+                    
+                    <table *ngIf="tareas.length > 0" class="table table-striped mt-5">
+                        
+                        <tbody>
+                            <tr>
+                                <td class="task-box">
+                                    <div class="task-field">   
+                                        {{ tarea.titulo }}
+                                    </div>
+                                    <div class="task-buttons">
+                                        <i (click)="eliminarTarea(tarea.id)" class="fas fa-trash-alt fa-lg text-danger"></i>
+                                        <i class="fas fa-edit fa-lg text-info mr-2" [routerLink]="['/editTarea/', tarea.id]"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+
+
+                </i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--          <div *ngFor="let tarea of tareas;let i = index">
+                <i  class= "tarea" [routerLink]="['/detail',i]" [queryParams]="tarea"></i>   -->
+
+<!-- ? TABLA -->
+
+<!-- </div> -->
+<!-- </div>
+</div>  -->

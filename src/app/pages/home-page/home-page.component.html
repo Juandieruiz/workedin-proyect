@@ -1,0 +1,43 @@
+<!--  Boton Log Out -->
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+<button button class="btn btn-dark btn-lg float-right" [routerLink]="['/login']">
+    Log out
+</button>
+
+
+
+<div class="content" role="main">
+
+    <h1>Bienvenido a Workedin</h1>
+
+</div>
+<hr>
+<h2>¿Que quieres hacer hoy?</h2>
+<h3>Opciones</h3>
+
+<input type="hidden" #selection>
+<h6>¡Revisa tus tareas ahora mismo!</h6>
+<div class="card-container">
+    <button button class="btn btn-dark btn-lg float-left" [routerLink]="['/task-list']">
+        Lista de Tareas
+    </button> 
+    <br>
+    <br>
+    <hr>
+<h6>¡Revisa tus Contactos ahora mismo!</h6>
+
+    <button button class="btn btn-dark btn-lg float-center" [routerLink]="['/contact-list']">
+        Lista de Contactos
+    </button>
+</div>
+<hr>
+
+<!-- Footer -->
+<footer>
+    2021© Juan Diego Gómez - Proyecto Angular
+</footer>
+</div>
+</div>
+</div>

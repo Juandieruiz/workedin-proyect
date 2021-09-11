@@ -1,0 +1,21 @@
+
+      <div *ngIf="loading" class="spinner-border float-right" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>      
+<h5>
+    <img mat-card-avatar src="{{contactoSeleccionado.avatar}}" alt="avatar">   
+</h5>
+
+<h4>
+    Nombre: {{ contactoSeleccionado.first_name }}
+</h4>
+<h4>
+    Apellidos: {{contactoSeleccionado.last_name}}
+</h4>
+<h4>Email: {{contactoSeleccionado.email}}
+
+</h4>
+
+<button class="btn btn-dark btn-lg float-right" [routerLink]="['/contact-list']">
+                Volver a Contactos</button>
+

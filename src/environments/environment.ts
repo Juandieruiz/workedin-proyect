@@ -4,15 +4,15 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
-    apiKey: "AIzaSyCp4aTc4aotz3qzuGfGgcdkH1mKzFC-vdA",
-  authDomain: "crudtareas-f6135.firebaseapp.com",
-  projectId: "crudtareas-f6135",
-  storageBucket: "crudtareas-f6135.appspot.com",
-  messagingSenderId: "561868911485",
-  appId: "1:561868911485:web:e922b0718116108a905214",
-  measurementId: "G-KPZDW4WDC2"
-  }
+  firebaseConfig = {
+  apiKey: "AIzaSyClM1foyX9stmSpChKJ5tPvbS6ejp-kULI",
+  authDomain: "workedin-8d38f.firebaseapp.com",
+  projectId: "workedin-8d38f",
+  storageBucket: "workedin-8d38f.appspot.com",
+  messagingSenderId: "261630294719",
+  appId: "1:261630294719:web:891cacfbf84bf8aaa1e40a",
+  measurementId: "G-MBNDRJHXJG"
+}
 };
 
 /*
